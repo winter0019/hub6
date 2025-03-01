@@ -1,52 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-US" data-theme="seo-lab">
+<html lang="en-US" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO-Lab | SEO Architecture for Digital Growth</title>
-    <meta name="description" content="Enterprise SEO solutions engineered for SaaS and technology leaders. SEO-Lab delivers sustainable organic growth through technical excellence.">
+    <meta name="robots" content="index, follow">
+    <title>SEO-Lab | Technical SEO Solutions for SaaS & Technology Companies</title>
+    <meta name="description" content="Enterprise SEO solutions engineered for SaaS and technology leaders. Drive sustainable organic growth through technical SEO excellence.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SEO-Lab | Technical SEO Architecture for Digital Growth">
+    <meta property="og:description" content="Enterprise SEO solutions engineered for SaaS and technology leaders.">
+    <meta property="og:image" content="https://seo-lab.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SEO-Lab | Technical SEO Solutions">
+    <meta name="twitter:description" content="Data-driven SEO strategies for technology enterprises.">
+    <meta name="twitter:image" content="https://seo-lab.com/twitter-card.jpg">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "SEO-Lab",
+        "image": "https://seo-lab.com/logo.jpg",
+        "description": "Technical SEO solutions for SaaS and technology companies",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New York",
+            "addressRegion": "NY"
+        }
+    }
+    </script>
 </head>
+
 <body>
-    <div class="sidebar">
-        <h1>SEO-Lab</h1>
-        <ul>
-            <li><a href="#solutions">🚀 Solutions</a></li>
-            <li><a href="#methodology">🛠 Methodology</a></li>
-            <li><a href="#results">📊 Results</a></li>
-            <li><a href="#insights">🔍 Insights</a></li>
-            <li><a href="#contact">🚀 Start Project</a></li>
+    <nav class="navbar">
+        <a href="/" class="brand">SEO-Lab</a>
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#insights">Insights</a></li>
+            <li><a href="#contact" class="cta-button">Start Project</a></li>
         </ul>
-        <button id="theme-toggle">🌙 Dark Mode</button>
-    </div>
-    
+    </nav>
+
     <main>
-        <header class="header">
-            <h1>Technical SEO Engineered by <span>SEO-Lab</span></h1>
-            <p>Architecture-Driven Growth for SaaS & Technology Enterprises</p>
-            <a href="#contact" class="btn">Request Technical Audit</a>
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="gradient-text">Technical SEO Engineered for Growth</h1>
+                <p class="lead">Architecture-Driven Organic Growth for SaaS Companies</p>
+                <div class="cta-container">
+                    <a href="#contact" class="cta-button">Request Technical Audit</a>
+                    <a href="#methodology" class="secondary-cta">Explore Methodology</a>
+                </div>
+            </div>
         </header>
 
-        <section class="grid">
-            <div class="card">
+        <section class="features">
+            <article class="feature-card">
+                <svg class="feature-icon">...</svg>
                 <h3>SEO Growth Framework</h3>
-                <p>Data-driven technical SEO strategies that scale.</p>
-            </div>
-            <div class="card">
-                <h3>Enterprise SEO</h3>
-                <p>Custom SEO architectures for high-growth SaaS companies.</p>
-            </div>
-            <div class="card">
-                <h3>Case Studies</h3>
-                <p>Discover how we drive sustainable traffic increases.</p>
-            </div>
+                <p>Data-driven technical strategies that scale with your business</p>
+            </article>
+            <article class="feature-card">
+                <svg class="feature-icon">...</svg>
+                <h3>Enterprise Architecture</h3>
+                <p>Custom SEO infrastructure for complex SaaS platforms</p>
+            </article>
+            <article class="feature-card">
+                <svg class="feature-icon">...</svg>
+                <h3>Performance Analytics</h3>
+                <p>Real-time SEO metrics with custom dashboards</p>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 SEO-Lab. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/technical-seo">Technical SEO</a></li>
+                    <li><a href="/content-strategy">Content Strategy</a></li>
+                    <li><a href="/seo-audits">SEO Audits</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="/blog">Insights Blog</a></li>
+                    <li><a href="/case-studies">Case Studies</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 SEO-Lab. All rights reserved</p>
+        </div>
     </footer>
 </body>
 </html>
